@@ -27,7 +27,6 @@
         <div class="content">
             <h3 class="has-padding">Contact Us</h3>
             <div class="row success hide" id="success">
-                ~ Thank you! ~
             </div>
             <div>
                 <form name="contact_us" action="./contact_us.html" method="post" id="contact_us">
@@ -64,10 +63,10 @@
             const form = document.getElementById('contact_us');
             
             form.addEventListener('submit', (event) => {
-                // stop form submission
+                // stops form submission if user hits enter key
                 event.preventDefault();
 
-                // handle the form data
+                // handles the form data
                 success(form);
             });
         </script>
