@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <script type='text/javascript' src="./js/common_functions.js"></script>
+</head>
+<body>
+    <div class="header">
+        <img src="./images/UNLogo.png" width="100" alt="UN Logo">
+        <h1 class="title">
+          Education and Poverty
+        </h1>
+    </div>    
+    <div class="main-content sub-pages">
+        <div class="sidenav">
+            <ul>
+                <a href="index.html"><li>Home</li></a>
+                <a href="sdg1-1.html"><li>Sustainable Development Goal 1.1</li></a>
+                <a href="sdg4-1.html"><li>Sustainable Development Goal 4.1</li></a>
+                <a href="how_they_are_related.html"><li>How They Are Related</li></a>
+                <a href="how_you_can_help.html"><li>How You Can Help</li></a>
+                <a href="contact_us.html" class="active"><li>Contact Us</li></a>
+            </ul>
+        </div>
+        <div class="content">
+            <h3 class="has-padding">Contact Us</h3>
+            <div class="row success hide" id="success">
+                ~ Thank you! ~
+            </div>
+            <div>
+                <form name="contact_us" action="./contact_us.html" method="post" id="contact_us">
+                    <div class="row">
+                        <label>Name: </label><input class="formInput" name="name" placeholder="Enter your name:">
+                    </div>
+                    <div class="row">
+                        <label>Email: </label><input class="formInput" name="email" placeholder="Enter your email:">
+                    </div>
+                    <div class="row">
+                        <label class="country">Country: </label>
+                        <select id="country" name="country" onchange="selectCountry(this)">
+                            <option value="canada">Canada</option>
+                            <option value="usa">USA</option>
+                            <option value="other">Other</option>
+                          </select>
+                    </div>
+                    <div id="other" class="row hide">
+                        <label>Other: </label><input class="formInput" name="other">
+                    </div>
+                    <div class="row">
+                        <label>Message: </label><textarea name="feedback" maxlength="10"></textarea>
+                    </div>
+                    <div class="row">
+                        <button value="Submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <footer>
+            ©Upper Canada College 2022. All Rights Reserved.
+        </footer>
+        <script>
+            const form = document.getElementById('contact_us');
+            
+            form.addEventListener('submit', (event) => {
+                // stop form submission
+                event.preventDefault();
+
+                // handle the form data
+                success(form);
+            });
+        </script>
+    </div>
+</body>
+</html>
