@@ -52,3 +52,7 @@ a:hover {
 .hide {
   display: none;
 }
+
+.content p {
+    font-family: ReadexPro;
+}
