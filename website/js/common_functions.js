@@ -1,7 +1,5 @@
-/* Show other input field when select other option in country selector
-** https://stackoverflow.com/questions/5836710/css-javascript-show-hide-div-using-a-css-class
-** @method selectCountry
-** @params {Object} ele   country selector
+/* Shows the 'Other' input field when the other option is selected in the country selector
+** inspired by https://stackoverflow.com/questions/5836710/css-javascript-show-hide-div-using-a-css-class
 */
 function selectCountry(ele) {
     if (ele && ele.selectedIndex === 2) {
@@ -11,11 +9,7 @@ function selectCountry(ele) {
     }
 }
 
-/* Reset form input data after submit
-** 
-** @method reset
-** @params {Object} form   submission form element
-*/
+// Resets the form input data after user submits
 function reset(form) {
     form.elements['name'].value = '';
     form.elements['email'].value = '';
@@ -24,10 +18,8 @@ function reset(form) {
     form.elements['feedback'].value = '';
 }
 
-/* Show success message when click on submit button
-** https://stackoverflow.com/questions/5836710/css-javascript-show-hide-div-using-a-css-class
-** @method success
-** @params {Object} form   submission form element
+/* Shows a success message when submit button is clicked
+** inspired by https://stackoverflow.com/questions/5836710/css-javascript-show-hide-div-using-a-css-class
 */
 function success(form) {
     const name = form.elements['name'];
@@ -35,11 +27,11 @@ function success(form) {
     if (name.value !== '') {
         document.getElementById('success').style.display = "block";
 
-        document.getElementById('success').innerHTML = "~ Thank you " 
+        document.getElementById('success').innerHTML = "Thank you " 
             + name.value 
-            + "! Your feedback is very important to us! ~";
+            + "! Your feedback is very important to us!";
     }
 
-    // reset form data
+    // resets the form data
     reset(form);
 }
