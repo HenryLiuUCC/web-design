@@ -1,0 +1,201 @@
+@font-face {
+  font-family: ReadexPro;
+  src: url(../fonts/ReadexPro-Regular.ttf);
+}
+
+body {
+  background-color: #FFE5E5;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  float: left;
+  width: 100%;
+  background-color: #D33C3C;
+  display: inline-flex;
+  height: 135px;
+}
+
+.header img {
+  padding: 10px;
+  float: left;
+  margin: 10px 50px;
+  background-color: white;
+}
+
+h1.title {
+  font-family: verdana;
+  text-align: left;
+  font-size: 48px;
+  color: white;
+  padding: 35px 0 100px;
+  margin: 0;
+  width: 90%;
+}
+
+.search-bar {
+  float: right;
+  margin-top: 90px;
+  padding-right: 30px;
+}
+
+.search-bar input {
+  border: 1px solid #ddd;
+  background-image: url('../images/searchicon.png');
+  background-position: 0 3px;
+  background-size: 13%;
+  background-repeat: no-repeat;
+  padding: 8px 12px 8px 30px;
+}
+
+.main-content {
+  float: left;
+  width:  100%;
+}
+
+.main-content.sub-pages {
+  background-color: white;
+}
+
+.sidenav {
+  min-height: 800px;
+  width: 20%;
+  background-color: #DAD9D9;
+  float: left;
+  font-family: ReadexPro;
+}
+
+.headline {
+  float: left;
+  width: 80%;
+}
+
+.headline .background {
+  height:  140px;
+  background-position: 0% 35%;
+  background-image: url('../images/ImageEducation.jpeg');
+  box-shadow: 0px 10px 13px -7px #000000
+}
+
+.content {
+  float: left;
+  margin: 10px 20px;
+}
+
+.sub-pages .content {
+  width:  70%;
+}
+
+.sub-pages img {
+  margin-right: 10px;
+}
+
+.sub-pages p {
+  line-height: 30px;
+}
+
+.sub-headline {
+  float: left;
+  width: 100%;
+  padding-top: 10px;
+}
+
+.sub-headline div {
+  width: 49%;
+  font-family: monospace;
+  font-size: 40px;
+  margin: 10px 0;
+  background-color: white;
+  min-height: 100px;
+}
+
+.image1, .image2, .image3, .image4 {
+  height: 120;
+  background-position: 30% 75%;
+  background-image: url('../images/EducationPoverty1.jpeg');
+  background-size: 95%;
+}
+
+.image2 {
+  background-position: 20% 20%;
+  background-image: url('../images/ExtremePoverty1.jpeg');
+}
+
+.image3 {
+  background-repeat: no-repeat;
+  background-position: 0% 70%;
+  background-image: url('../images/PovertyStatisticUS.jpeg');
+  background-size: 55%;
+}
+
+.image4 {
+  background-position: 0% 10%;
+  background-image: url('../images/poverty-education-facts.jpeg');
+}
+
+.sub-headline a {
+  color: #999;
+}
+
+.success {
+  border: 1px solid green;
+  border-radius: 5px;
+  width: 80% !important;
+  padding: 20px;
+  background-color: turquoise;
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+
+/* begin of form styles */
+
+label {
+  width: 100px;
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 5px;
+  font-weight: bold;
+}
+
+label.country {
+  width: 96px;
+}
+
+input[class=formInput], select, textarea {
+  width: 70%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+button {
+  margin-right: 183px;
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+select {
+  width:  72%;
+}
+
+textarea {
+  height: 150px;
+}
+
+/* end of form styles */
+
+footer {
+  color:#807E7E;
+  text-align: center;
+  font-size: 14px;
+  margin: 20px;
+  float: left;
+  width: 100%;
+}
